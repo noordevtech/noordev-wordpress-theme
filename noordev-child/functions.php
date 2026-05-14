@@ -179,6 +179,7 @@ function noordev_child_inner_page_template() {
 		'work'         => 'case-studies',
 		'about'        => 'about',
 		'contact'      => 'contact',
+		'security'     => 'security',
 	);
 	return isset( $slug_map[ $post->post_name ] ) ? $slug_map[ $post->post_name ] : '';
 }
