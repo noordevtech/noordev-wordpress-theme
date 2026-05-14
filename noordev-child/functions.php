@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'NOORDEV_CHILD_VERSION', '0.1.0' );
+define( 'NOORDEV_CHILD_VERSION', '0.2.0' );
 
 /**
  * Theme setup — runs once on after_setup_theme.
