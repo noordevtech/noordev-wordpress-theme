@@ -1,0 +1,106 @@
+{
+  "version": "0.4",
+  "title": "Noordev — Contact",
+  "type": "page",
+  "content": [
+    {
+      "id": "nd000001",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000002",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000003",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"page-hero\" data-screen-label=\"Contact hero\">\n  <div class=\"page-hero__inner\">\n    <div>\n      <div class=\"page-hero__crumbs\">\n        <a href=\"/\">Noordev</a><span class=\"sep\">/</span><span>Contact</span>\n      </div>\n      <div class=\"page-hero__eyebrow\">Get in touch</div>\n      <h1>\n        Tell us about<br>\n        <span class=\"italic\">the engagement</span><span class=\"accent-dot\" aria-hidden=\"true\"></span>\n      </h1>\n    </div>\n    <div>\n      <p class=\"page-hero__lede\">A short note is enough to start. A partner reads every inbound within one business day, in any of the four time zones we operate in. Existing clients should go straight to their account channel.</p>\n      <div class=\"page-hero__meta\">\n        <div class=\"page-hero__meta-item\"><div class=\"l\">First reply</div><div class=\"v\">&lt; 1 biz day</div></div>\n        <div class=\"page-hero__meta-item\"><div class=\"l\">Read by</div><div class=\"v\">A partner</div></div>\n        <div class=\"page-hero__meta-item\"><div class=\"l\">Time zones</div><div class=\"v\">ET &middot; PT &middot; WET</div></div>\n      </div>\n    </div>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "nd000004",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000005",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000006",
+              "elType": "widget",
+              "settings": {
+                "html": "<div class=\"contact\" data-screen-label=\"Contact body\">\n  <form class=\"contact__form\" method=\"post\" action=\"\" onsubmit=\"event.preventDefault()\">\n    <div class=\"contact__form-label\">Project brief</div>\n    <h2>Start with the <span class=\"italic\">shortest version</span></h2>\n    <p class=\"contact__form-lede\">Two paragraphs and a deadline beats a 30-page RFP. We will follow up with the right questions once we know who is on the other end.</p>\n\n    <div class=\"contact__row\">\n      <div class=\"contact__field\">\n        <label for=\"nd-name\">Name<span class=\"req\">*</span></label>\n        <input id=\"nd-name\" type=\"text\" name=\"name\" required autocomplete=\"name\">\n      </div>\n      <div class=\"contact__field\">\n        <label for=\"nd-company\">Company</label>\n        <input id=\"nd-company\" type=\"text\" name=\"company\" autocomplete=\"organization\">\n      </div>\n    </div>\n\n    <div class=\"contact__row\">\n      <div class=\"contact__field\">\n        <label for=\"nd-email\">Work email<span class=\"req\">*</span></label>\n        <input id=\"nd-email\" type=\"email\" name=\"email\" required autocomplete=\"email\">\n      </div>\n      <div class=\"contact__field\">\n        <label for=\"nd-phone\">Phone</label>\n        <input id=\"nd-phone\" type=\"tel\" name=\"phone\" autocomplete=\"tel\">\n      </div>\n    </div>\n\n    <div class=\"contact__row contact__row--single\">\n      <div class=\"contact__field\">\n        <label>Discipline</label>\n        <div class=\"contact__pills\" role=\"radiogroup\" aria-label=\"Discipline\">\n          <label class=\"contact__pill\"><input type=\"radio\" name=\"discipline\" value=\"web\" checked> Web &amp; growth</label>\n          <label class=\"contact__pill\"><input type=\"radio\" name=\"discipline\" value=\"odoo\"> Odoo</label>\n          <label class=\"contact__pill\"><input type=\"radio\" name=\"discipline\" value=\"security\"> Security</label>\n          <label class=\"contact__pill\"><input type=\"radio\" name=\"discipline\" value=\"other\"> Not sure yet</label>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"contact__row contact__row--single\">\n      <div class=\"contact__field\">\n        <label>Budget range</label>\n        <div class=\"contact__pills\" role=\"radiogroup\" aria-label=\"Budget range\">\n          <label class=\"contact__pill\"><input type=\"radio\" name=\"budget\" value=\"25-50\"> $25&ndash;50k</label>\n          <label class=\"contact__pill\"><input type=\"radio\" name=\"budget\" value=\"50-150\" checked> $50&ndash;150k</label>\n          <label class=\"contact__pill\"><input type=\"radio\" name=\"budget\" value=\"150+\"> $150k+</label>\n          <label class=\"contact__pill\"><input type=\"radio\" name=\"budget\" value=\"unsure\"> Not sure yet</label>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"contact__row contact__row--single\">\n      <div class=\"contact__field\">\n        <label for=\"nd-msg\">Tell us about the engagement<span class=\"req\">*</span></label>\n        <textarea id=\"nd-msg\" name=\"message\" required placeholder=\"What is the problem, what does success look like, and is there a deadline we should know about?\"></textarea>\n      </div>\n    </div>\n\n    <div class=\"contact__submit-row\">\n      <p class=\"contact__small\">By submitting, you agree to our privacy policy. We will only use your details to reply to this enquiry.</p>\n      <button type=\"submit\" class=\"nd-btn nd-btn--accent nd-btn--lg\">\n        Send brief\n        <svg class=\"arrow\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M5 12h14M13 5l7 7-7 7\"/></svg>\n      </button>\n    </div>\n  </form>\n\n  <aside class=\"contact__side\" aria-label=\"Other ways to reach us\">\n    <div class=\"contact__side-block\">\n      <h3>Direct lines</h3>\n      <div class=\"contact__direct\">\n        <div class=\"contact__line\"><span class=\"city\">Montr&eacute;al &middot; Toronto</span><span class=\"num\"><a href=\"tel:+14509900134\">(450) 990-0134</a></span></div>\n        <div class=\"contact__line\"><span class=\"city\">Miami</span><span class=\"num\"><a href=\"tel:+18774774146\">(877) 477-4146</a></span></div>\n        <div class=\"contact__line\"><span class=\"city\">Rabat</span><span class=\"num\"><a href=\"tel:+212661863992\">0661 86 39 92</a></span></div>\n        <div class=\"contact__line\"><span class=\"city\">Email</span><span class=\"num\"><a href=\"mailto:hello@noordev.com\">hello@noordev.com</a></span></div>\n      </div>\n    </div>\n\n    <div class=\"contact__side-block\">\n      <h3>Office hours</h3>\n      <ul class=\"contact__hours-list\">\n        <li><span>Monday &ndash; Thursday</span><b>9:00 &ndash; 18:00</b></li>\n        <li><span>Friday</span><b>9:00 &ndash; 16:00</b></li>\n        <li><span>Weekend</span><b>On-call only</b></li>\n      </ul>\n    </div>\n\n    <div class=\"contact__sla\">\n      <p><b>Existing client?</b> Skip the form &mdash; use your account channel for an SLA-tracked reply. New enquiries get a first read within one business day, anywhere on the planet.</p>\n    </div>\n  </aside>\n</div>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": []
+}

@@ -158,103 +158,30 @@ function noordev_child_is_home_page() {
 }
 
 /**
- * Map an active page template to its inner-page CSS slug.
+ * Map the current page to its inner-page CSS slug by post slug.
  *
  * Returns one of 'services' | 'case-studies' | 'about' | 'contact', or '' if
- * the current request is not using one of our inner page templates.
+ * the current page does not match. Detection is by post slug — the inner
+ * pages are imported as Elementor templates, so there is no PHP template to
+ * key off of.
  */
 function noordev_child_inner_page_template() {
 	if ( ! is_page() ) {
 		return '';
 	}
-	$template = (string) get_page_template_slug();
-	$map      = array(
-		'page-services.php'      => 'services',
-		'page-case-studies.php'  => 'case-studies',
-		'page-about.php'         => 'about',
-		'page-contact.php'       => 'contact',
-	);
-	if ( isset( $map[ $template ] ) ) {
-		return $map[ $template ];
-	}
-
-	// Fall back to slug-based detection so freshly-created pages light up before
-	// the editor has assigned the template.
 	$post = get_queried_object();
-	if ( $post && isset( $post->post_name ) ) {
-		$slug_map = array(
-			'services'     => 'services',
-			'case-studies' => 'case-studies',
-			'work'         => 'case-studies',
-			'about'        => 'about',
-			'contact'      => 'contact',
-		);
-		if ( isset( $slug_map[ $post->post_name ] ) ) {
-			return $slug_map[ $post->post_name ];
-		}
+	if ( ! $post || empty( $post->post_name ) ) {
+		return '';
 	}
-	return '';
-}
-
-/**
- * Handle the Contact-page form submission.
- *
- * Validates the nonce + honeypot, emails the submission to the site admin,
- * and redirects back to the contact page with a flash query param. Replace
- * with CF7/WPForms wiring once a form plugin is installed.
- */
-function noordev_child_handle_contact_submit() {
-	$redirect = isset( $_POST['noordev_redirect'] ) ? esc_url_raw( wp_unslash( $_POST['noordev_redirect'] ) ) : home_url( '/contact/' );
-
-	if ( ! isset( $_POST['noordev_contact_nonce'] ) || ! wp_verify_nonce( sanitize_key( wp_unslash( $_POST['noordev_contact_nonce'] ) ), 'noordev_contact' ) ) {
-		wp_safe_redirect( add_query_arg( 'sent', 'err', $redirect ) );
-		exit;
-	}
-
-	// Honeypot — real users will not fill this hidden field.
-	if ( ! empty( $_POST['noordev_company_url'] ) ) {
-		wp_safe_redirect( add_query_arg( 'sent', 'ok', $redirect ) );
-		exit;
-	}
-
-	$name       = isset( $_POST['name'] )       ? sanitize_text_field( wp_unslash( $_POST['name'] ) )       : '';
-	$company    = isset( $_POST['company'] )    ? sanitize_text_field( wp_unslash( $_POST['company'] ) )    : '';
-	$email      = isset( $_POST['email'] )      ? sanitize_email( wp_unslash( $_POST['email'] ) )           : '';
-	$phone      = isset( $_POST['phone'] )      ? sanitize_text_field( wp_unslash( $_POST['phone'] ) )      : '';
-	$discipline = isset( $_POST['discipline'] ) ? sanitize_text_field( wp_unslash( $_POST['discipline'] ) ) : '';
-	$budget     = isset( $_POST['budget'] )     ? sanitize_text_field( wp_unslash( $_POST['budget'] ) )     : '';
-	$message    = isset( $_POST['message'] )    ? sanitize_textarea_field( wp_unslash( $_POST['message'] ) ) : '';
-
-	if ( ! $name || ! is_email( $email ) || ! $message ) {
-		wp_safe_redirect( add_query_arg( 'sent', 'err', $redirect ) );
-		exit;
-	}
-
-	$to      = apply_filters( 'noordev_child_contact_recipient', get_option( 'admin_email' ) );
-	$subject = sprintf(
-		/* translators: %s: visitor name */
-		__( '[Noordev] New project brief — %s', 'noordev-child' ),
-		$name
+	$slug_map = array(
+		'services'     => 'services',
+		'case-studies' => 'case-studies',
+		'work'         => 'case-studies',
+		'about'        => 'about',
+		'contact'      => 'contact',
 	);
-	$body = sprintf(
-		"Name:       %s\nCompany:    %s\nEmail:      %s\nPhone:      %s\nDiscipline: %s\nBudget:     %s\n\n%s\n",
-		$name,
-		$company,
-		$email,
-		$phone,
-		$discipline,
-		$budget,
-		$message
-	);
-	$headers = array( 'Reply-To: ' . $name . ' <' . $email . '>' );
-
-	$ok = wp_mail( $to, $subject, $body, $headers );
-
-	wp_safe_redirect( add_query_arg( 'sent', $ok ? 'ok' : 'err', $redirect ) );
-	exit;
+	return isset( $slug_map[ $post->post_name ] ) ? $slug_map[ $post->post_name ] : '';
 }
-add_action( 'admin_post_nopriv_noordev_contact_submit', 'noordev_child_handle_contact_submit' );
-add_action( 'admin_post_noordev_contact_submit',        'noordev_child_handle_contact_submit' );
 
 /**
  * Allow the announcement bar copy to be filtered without editing templates.

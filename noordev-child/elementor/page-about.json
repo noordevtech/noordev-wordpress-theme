@@ -1,0 +1,253 @@
+{
+  "version": "0.4",
+  "title": "Noordev — About",
+  "type": "page",
+  "content": [
+    {
+      "id": "nd000001",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000002",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000003",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"page-hero\" data-screen-label=\"About hero\">\n  <div class=\"page-hero__inner\">\n    <div>\n      <div class=\"page-hero__crumbs\">\n        <a href=\"/\">Noordev</a><span class=\"sep\">/</span><span>About</span>\n      </div>\n      <div class=\"page-hero__eyebrow\">Who we are</div>\n      <h1>\n        A senior team<br>\n        <span class=\"italic\">across four cities</span><span class=\"accent-dot\" aria-hidden=\"true\"></span>\n      </h1>\n    </div>\n    <div>\n      <p class=\"page-hero__lede\">Noordev is an independent digital practice founded in Montr&eacute;al in 2012. We work as a single senior team across Montr&eacute;al, Toronto, Miami, and Rabat &mdash; building marketing systems, Odoo platforms, and security programs for organizations that need adults in the room.</p>\n      <div class=\"page-hero__meta\">\n        <div class=\"page-hero__meta-item\"><div class=\"l\">Founded</div><div class=\"v\">2012</div></div>\n        <div class=\"page-hero__meta-item\"><div class=\"l\">Practitioners</div><div class=\"v\">28</div></div>\n        <div class=\"page-hero__meta-item\"><div class=\"l\">Cities</div><div class=\"v\">4</div></div>\n      </div>\n    </div>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "nd000004",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000005",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000006",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"rail\">\n  <header>\n    <div class=\"rail__label\">Our story</div>\n    <h2 class=\"rail__title\">Started in 2012. <span class=\"italic\">Still independent.</span></h2>\n  </header>\n  <div class=\"rail__body\">\n    <p>We started Noordev to do the work most agencies had stopped doing &mdash; taking long engagements, owning operational systems, and being on call when something broke at midnight. Thirteen years in, we are still independent, still senior-led, and still small enough that you will recognize every face on the call.</p>\n    <p>Our practice has grown around three disciplines that keep showing up together: the marketing surface that earns attention, the Odoo system that runs the business behind it, and the security posture that keeps both intact. We refused to specialize in only one of them because real engagements rarely give you that option.</p>\n    <p><strong>We work where our clients work.</strong> Studios in Montr&eacute;al, Toronto, Miami, and Rabat let us hand work off across time zones without subcontractors and keep relationships within driving distance of every account.</p>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "nd000007",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000008",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000009",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"principles\" aria-labelledby=\"prin-title\">\n  <div class=\"principles__inner\">\n    <div class=\"section__head\" style=\"margin-bottom:0\">\n      <div>\n        <div class=\"section__eyebrow\">How we operate</div>\n        <h2 id=\"prin-title\" class=\"section__title\">Four principles <span class=\"italic\">we will not negotiate</span></h2>\n      </div>\n      <p class=\"section__body\">Everything else is a conversation. These four are why our clients stay.</p>\n    </div>\n    <div class=\"principles__grid\">\n      <article class=\"principle\">\n        <div class=\"principle__n\">01 &middot; Principle</div>\n        <h3 class=\"principle__title\">Senior <span class=\"italic\">always</span></h3>\n        <p class=\"principle__body\">No staff augmentation, no rotating juniors. The person on the kickoff is the person on the last call.</p>\n      </article>\n      <article class=\"principle\">\n        <div class=\"principle__n\">02 &middot; Principle</div>\n        <h3 class=\"principle__title\">Fixed scope, <span class=\"italic\">honest scope</span></h3>\n        <p class=\"principle__body\">We will tell you what is in, what is out, and what we are not sure about. Change orders are a conversation, not a surprise.</p>\n      </article>\n      <article class=\"principle\">\n        <div class=\"principle__n\">03 &middot; Principle</div>\n        <h3 class=\"principle__title\">Outcomes, <span class=\"italic\">not outputs</span></h3>\n        <p class=\"principle__body\">Every engagement carries a number we will be measured on. We will publish it monthly until it moves.</p>\n      </article>\n      <article class=\"principle\">\n        <div class=\"principle__n\">04 &middot; Principle</div>\n        <h3 class=\"principle__title\">Audit-grade <span class=\"italic\">by default</span></h3>\n        <p class=\"principle__body\">Documentation, change logs, and access controls that survive a real audit &mdash; because most of our clients eventually get one.</p>\n      </article>\n    </div>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "nd00000a",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd00000b",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd00000c",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"team\" aria-labelledby=\"team-title\">\n  <div class=\"section__head\">\n    <div>\n      <div class=\"section__eyebrow\">The team</div>\n      <h2 id=\"team-title\" class=\"section__title\">Senior practitioners, <span class=\"italic\">every seat</span></h2>\n    </div>\n    <p class=\"section__body\">A sample of the people you will actually meet. The full bench is twenty-eight strong across the four studios.</p>\n  </div>\n  <div class=\"team__grid\">\n    <div class=\"member\">\n      <div class=\"member__photo\" aria-hidden=\"true\" style=\"--mx: 40%; --my: 40%;\"><span class=\"member__initials\">NS<span class=\"dot\"></span></span></div>\n      <div class=\"member__name\">Noor Sadiqi</div>\n      <div class=\"member__role\">Managing partner</div>\n      <div class=\"member__loc\">Montr&eacute;al</div>\n    </div>\n    <div class=\"member\">\n      <div class=\"member__photo\" aria-hidden=\"true\" style=\"--mx: 60%; --my: 30%;\"><span class=\"member__initials\">AB<span class=\"dot\"></span></span></div>\n      <div class=\"member__name\">A&iuml;cha Bensa&iuml;d</div>\n      <div class=\"member__role\">Design director</div>\n      <div class=\"member__loc\">Toronto</div>\n    </div>\n    <div class=\"member\">\n      <div class=\"member__photo\" aria-hidden=\"true\" style=\"--mx: 30%; --my: 60%;\"><span class=\"member__initials\">JR<span class=\"dot\"></span></span></div>\n      <div class=\"member__name\">Julien Roy</div>\n      <div class=\"member__role\">Engineering lead</div>\n      <div class=\"member__loc\">Montr&eacute;al</div>\n    </div>\n    <div class=\"member\">\n      <div class=\"member__photo\" aria-hidden=\"true\" style=\"--mx: 70%; --my: 50%;\"><span class=\"member__initials\">KM<span class=\"dot\"></span></span></div>\n      <div class=\"member__name\">Karim Mansouri</div>\n      <div class=\"member__role\">Odoo partner</div>\n      <div class=\"member__loc\">Rabat</div>\n    </div>\n    <div class=\"member\">\n      <div class=\"member__photo\" aria-hidden=\"true\" style=\"--mx: 50%; --my: 20%;\"><span class=\"member__initials\">EL<span class=\"dot\"></span></span></div>\n      <div class=\"member__name\">Elena Loubet</div>\n      <div class=\"member__role\">Security lead</div>\n      <div class=\"member__loc\">Montr&eacute;al</div>\n    </div>\n    <div class=\"member\">\n      <div class=\"member__photo\" aria-hidden=\"true\" style=\"--mx: 55%; --my: 70%;\"><span class=\"member__initials\">DR<span class=\"dot\"></span></span></div>\n      <div class=\"member__name\">Diego Reyes</div>\n      <div class=\"member__role\">Growth lead</div>\n      <div class=\"member__loc\">Miami</div>\n    </div>\n    <div class=\"member\">\n      <div class=\"member__photo\" aria-hidden=\"true\" style=\"--mx: 35%; --my: 45%;\"><span class=\"member__initials\">SK<span class=\"dot\"></span></span></div>\n      <div class=\"member__name\">Sara Khalil</div>\n      <div class=\"member__role\">Brand &amp; content</div>\n      <div class=\"member__loc\">Toronto</div>\n    </div>\n    <div class=\"member\">\n      <div class=\"member__photo\" aria-hidden=\"true\" style=\"--mx: 65%; --my: 55%;\"><span class=\"member__initials\">TL<span class=\"dot\"></span></span></div>\n      <div class=\"member__name\">Th&eacute;o Lacombe</div>\n      <div class=\"member__role\">Client partner</div>\n      <div class=\"member__loc\">Montr&eacute;al</div>\n    </div>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "nd00000d",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd00000e",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd00000f",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"locs-strip\" aria-labelledby=\"locs-title\">\n  <div class=\"locs-strip__inner\">\n    <div class=\"section__head\" style=\"margin-bottom:0\">\n      <div>\n        <div class=\"section__eyebrow\" style=\"color: var(--navy-300)\">Where to find us</div>\n        <h2 id=\"locs-title\" class=\"section__title\" style=\"color: white\">Four studios. <span class=\"italic\" style=\"color: var(--navy-200)\">One team</span></h2>\n      </div>\n      <p class=\"section__body\" style=\"color: var(--navy-300)\">Hours follow the local zone, but the team is reachable from 7am Atlantic to 7pm Pacific by design.</p>\n    </div>\n    <div class=\"locs-strip__grid\">\n      <div class=\"loc\">\n        <h3 class=\"loc__city\">Montr&eacute;al <span class=\"italic\">&middot; HQ</span></h3>\n        <p class=\"loc__addr\">475 Place d&rsquo;Armes, Suite 401, Montr&eacute;al QC H2Y 2W7</p>\n        <div class=\"loc__phone\">(450) 990-0134</div>\n      </div>\n      <div class=\"loc\">\n        <h3 class=\"loc__city\">Toronto <span class=\"italic\">&middot; Studio</span></h3>\n        <p class=\"loc__addr\">20 Bay Street, Toronto ON M5J 2N8</p>\n        <div class=\"loc__phone\">(450) 990-0134</div>\n      </div>\n      <div class=\"loc\">\n        <h3 class=\"loc__city\">Miami <span class=\"italic\">&middot; Office</span></h3>\n        <p class=\"loc__addr\">1110 Brickell Avenue, Suite 400, Miami FL 33131</p>\n        <div class=\"loc__phone\">(877) 477-4146</div>\n      </div>\n      <div class=\"loc\">\n        <h3 class=\"loc__city\">Rabat <span class=\"italic\">&middot; Office</span></h3>\n        <p class=\"loc__addr\">13 Rue Patrice Lumumba, Hassan, Rabat 10010</p>\n        <div class=\"loc__phone\">0661 86 39 92</div>\n      </div>\n    </div>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": []
+}

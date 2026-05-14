@@ -1,0 +1,106 @@
+{
+  "version": "0.4",
+  "title": "Noordev — Case studies",
+  "type": "page",
+  "content": [
+    {
+      "id": "nd000001",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000002",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000003",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"page-hero\" data-screen-label=\"Case studies hero\">\n  <div class=\"page-hero__inner\">\n    <div>\n      <div class=\"page-hero__crumbs\">\n        <a href=\"/\">Noordev</a><span class=\"sep\">/</span><span>Case studies</span>\n      </div>\n      <div class=\"page-hero__eyebrow\">Selected work</div>\n      <h1>\n        Real systems.<br>\n        <span class=\"italic\">Measured outcomes</span><span class=\"accent-dot\" aria-hidden=\"true\"></span>\n      </h1>\n    </div>\n    <div>\n      <p class=\"page-hero__lede\">A representative slice of engagements across web, Odoo, and security. Numbers are reported by the client or pulled from their analytics &mdash; we will gladly share methodology on request.</p>\n      <div class=\"page-hero__meta\">\n        <div class=\"page-hero__meta-item\"><div class=\"l\">Live cases</div><div class=\"v\">7</div></div>\n        <div class=\"page-hero__meta-item\"><div class=\"l\">Industries</div><div class=\"v\">7</div></div>\n        <div class=\"page-hero__meta-item\"><div class=\"l\">Avg. tenure</div><div class=\"v\">3.4 yrs</div></div>\n      </div>\n    </div>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "nd000004",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000005",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000006",
+              "elType": "widget",
+              "settings": {
+                "html": "<div class=\"cases\" data-screen-label=\"Case grid\">\n  <div class=\"cases__filter\" role=\"region\" aria-label=\"Filter case studies\">\n    <span class=\"cases__filter-label\">Filter</span>\n    <div class=\"cases__filter-list\" data-filter-list>\n      <button type=\"button\" class=\"chip is-active\" data-filter=\"all\" aria-pressed=\"true\">All</button>\n      <button type=\"button\" class=\"chip\" data-filter=\"web\" aria-pressed=\"false\">Web</button>\n      <button type=\"button\" class=\"chip\" data-filter=\"odoo\" aria-pressed=\"false\">Odoo</button>\n      <button type=\"button\" class=\"chip\" data-filter=\"security\" aria-pressed=\"false\">Security</button>\n    </div>\n    <span class=\"cases__count\"><b>7</b> engagements</span>\n  </div>\n\n  <a class=\"case-feat\" href=\"#\" data-discipline=\"web\">\n    <div class=\"case-feat__copy\">\n      <div class=\"case-feat__tag\">Featured case</div>\n      <div class=\"case-feat__client\">Meridian Bank</div>\n      <h2 class=\"case-feat__title\">Rebuilding a 40-year-old bank for the way people actually move money.</h2>\n      <p class=\"case-feat__body\">We replatformed Meridian onto a modern marketing stack and rebuilt the application funnel. 12 months in, organic-led applications are up 41% and the average decision time dropped from six days to under two.</p>\n      <div class=\"case-feat__meta\">\n        <div><div class=\"k\">+41%</div><div class=\"l\">Applications</div></div>\n        <div><div class=\"k\">1.8 d</div><div class=\"l\">Decision time</div></div>\n        <div><div class=\"k\">12 mo</div><div class=\"l\">Engagement</div></div>\n      </div>\n    </div>\n    <div class=\"case-feat__visual\" aria-hidden=\"true\">\n      <span class=\"case-feat__mark\">m<span class=\"dot\"></span></span>\n    </div>\n  </a>\n\n  <div class=\"case-grid\" data-case-grid>\n    <a class=\"case-card\" href=\"#\" data-discipline=\"odoo\">\n      <div class=\"case-card__visual\" style=\"--vx: 70%; --vy: 30%;\" aria-hidden=\"true\"><span class=\"case-card__mark\">a<span class=\"dot\"></span></span></div>\n      <div class=\"case-card__body\">\n        <div class=\"case-card__client\">Atelier Norden</div>\n        <h3 class=\"case-card__title\">A direct-to-consumer brand built around a single Odoo source of truth.</h3>\n        <div class=\"case-card__metric\"><span>Order time</span><b>&minus;68%</b></div>\n      </div>\n    </a>\n    <a class=\"case-card\" href=\"#\" data-discipline=\"security\">\n      <div class=\"case-card__visual\" style=\"--vx: 30%; --vy: 60%;\" aria-hidden=\"true\"><span class=\"case-card__mark\">p<span class=\"dot\"></span></span></div>\n      <div class=\"case-card__body\">\n        <div class=\"case-card__client\">P&ocirc;le Sant&eacute; Qu&eacute;bec</div>\n        <h3 class=\"case-card__title\">ISO 27001 + Law 25 readiness for a 14-clinic health network.</h3>\n        <div class=\"case-card__metric\"><span>Audit pass</span><b>Stage 2</b></div>\n      </div>\n    </a>\n    <a class=\"case-card\" href=\"#\" data-discipline=\"web\">\n      <div class=\"case-card__visual\" style=\"--vx: 50%; --vy: 20%;\" aria-hidden=\"true\"><span class=\"case-card__mark\">v<span class=\"dot\"></span></span></div>\n      <div class=\"case-card__body\">\n        <div class=\"case-card__client\">Voltaria Energy</div>\n        <h3 class=\"case-card__title\">A lead engine for a B2B clean-energy installer scaling Ontario-wide.</h3>\n        <div class=\"case-card__metric\"><span>Qualified leads</span><b>+212%</b></div>\n      </div>\n    </a>\n    <a class=\"case-card\" href=\"#\" data-discipline=\"odoo\">\n      <div class=\"case-card__visual\" style=\"--vx: 80%; --vy: 70%;\" aria-hidden=\"true\"><span class=\"case-card__mark\">r<span class=\"dot\"></span></span></div>\n      <div class=\"case-card__body\">\n        <div class=\"case-card__client\">Routes Verts</div>\n        <h3 class=\"case-card__title\">Migration from Odoo 14 on-prem to odoo.sh, zero-downtime cutover.</h3>\n        <div class=\"case-card__metric\"><span>Downtime</span><b>0 min</b></div>\n      </div>\n    </a>\n    <a class=\"case-card\" href=\"#\" data-discipline=\"web\">\n      <div class=\"case-card__visual\" style=\"--vx: 20%; --vy: 50%;\" aria-hidden=\"true\"><span class=\"case-card__mark\">l<span class=\"dot\"></span></span></div>\n      <div class=\"case-card__body\">\n        <div class=\"case-card__client\">Studio Lumen</div>\n        <h3 class=\"case-card__title\">A multilingual editorial site that finally outranks the trade press.</h3>\n        <div class=\"case-card__metric\"><span>Organic sessions</span><b>4.2&times;</b></div>\n      </div>\n    </a>\n    <a class=\"case-card\" href=\"#\" data-discipline=\"security\">\n      <div class=\"case-card__visual\" style=\"--vx: 60%; --vy: 80%;\" aria-hidden=\"true\"><span class=\"case-card__mark\">f<span class=\"dot\"></span></span></div>\n      <div class=\"case-card__body\">\n        <div class=\"case-card__client\">Fiducie Brun</div>\n        <h3 class=\"case-card__title\">A privacy program that survived a real Law 25 incident in week two.</h3>\n        <div class=\"case-card__metric\"><span>Breach impact</span><b>Contained</b></div>\n      </div>\n    </a>\n  </div>\n</div>\n\n<script>\n(function(){\n  var filters = document.querySelectorAll('[data-filter-list] .chip');\n  var grid    = document.querySelector('[data-case-grid]');\n  if ( ! filters.length || ! grid ) return;\n  filters.forEach(function(btn){\n    btn.addEventListener('click', function(){\n      var f = btn.getAttribute('data-filter');\n      filters.forEach(function(b){\n        var active = b === btn;\n        b.classList.toggle('is-active', active);\n        b.setAttribute('aria-pressed', active ? 'true' : 'false');\n      });\n      grid.querySelectorAll('.case-card').forEach(function(card){\n        card.style.display = ( f === 'all' || card.getAttribute('data-discipline') === f ) ? '' : 'none';\n      });\n    });\n  });\n})();\n</script>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": []
+}
