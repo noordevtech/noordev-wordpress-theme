@@ -189,14 +189,42 @@ function noordev_child_inner_page_template() {
  *
  * Lets the user build the site Header and Footer (and add new pages of each
  * to specific URLs) inside Elementor instead of editing PHP. The child's
- * header.php / footer.php call `elementor_theme_do_location()` and fall back
- * to the bundled markup when no Elementor template targets the location.
+ * header.php / footer.php call `noordev_child_do_elementor_location()` and
+ * fall back to the bundled markup when no Elementor template targets the
+ * location.
  */
 function noordev_child_register_elementor_locations( $manager ) {
 	$manager->register_location( 'header' );
 	$manager->register_location( 'footer' );
 }
 add_action( 'elementor/theme/register_locations', 'noordev_child_register_elementor_locations' );
+
+/**
+ * Render an Elementor Pro Theme Builder location, returning true when a
+ * matching template was found and rendered.
+ *
+ * Wraps the public helper `elementor_theme_do_location()` so we keep working
+ * if the helper is missing or renamed (Elementor Pro 4.x reshuffles a lot of
+ * internals). Falls through the class-based API as a backup.
+ *
+ * @param string $location Registered location slug (e.g. 'header', 'footer').
+ * @return bool True if Elementor rendered a template for this location.
+ */
+function noordev_child_do_elementor_location( $location ) {
+	if ( function_exists( 'elementor_theme_do_location' ) ) {
+		return (bool) elementor_theme_do_location( $location );
+	}
+	if ( class_exists( '\\ElementorPro\\Modules\\ThemeBuilder\\Module' ) ) {
+		$module = \ElementorPro\Modules\ThemeBuilder\Module::instance();
+		if ( $module && method_exists( $module, 'get_locations_manager' ) ) {
+			$manager = $module->get_locations_manager();
+			if ( $manager && method_exists( $manager, 'do_location' ) ) {
+				return (bool) $manager->do_location( $location );
+			}
+		}
+	}
+	return false;
+}
 
 /**
  * Allow the announcement bar copy to be filtered without editing templates.

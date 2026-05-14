@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * location, render it here. Otherwise fall back to the bundled
  * announcement bar (nav.js mounts the sticky mega-menu after it).
  */
-if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) :
+if ( ! function_exists( 'noordev_child_do_elementor_location' ) || ! noordev_child_do_elementor_location( 'header' ) ) :
 	?>
 	<div class="announce" role="status">
 		<?php echo wp_kses_post( noordev_child_announcement() ); ?>
