@@ -48,6 +48,21 @@ function noordev_child_footer_column( $location, $heading, array $fallback ) {
 }
 ?>
 
+<?php
+/*
+ * Defer to Elementor Pro Theme Builder if a template is assigned to the
+ * `footer` location. Otherwise render the bundled dark navy footer below.
+ */
+if ( function_exists( 'elementor_theme_do_location' ) && elementor_theme_do_location( 'footer' ) ) :
+	wp_footer();
+	?>
+	</body>
+	</html>
+	<?php
+	return;
+endif;
+?>
+
 <footer class="footer" role="contentinfo">
 	<div class="footer__inner">
 		<div class="footer__top">

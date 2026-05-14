@@ -52,16 +52,16 @@
       <a href="${homeUrl}" class="nd-sitenav__brand" aria-label="Noordev home">noordev<span class="dot"></span></a>
       <ul class="nd-sitenav__links">
         <li>
-          <button type="button" aria-expanded="false" aria-controls="nd-mega-services" id="nd-services-trigger" class="${active === 'services' ? 'active' : ''}">
+          <button type="button" aria-expanded="false" aria-controls="nd-mega-services" id="nd-services-trigger" data-nav-key="services" class="${active === 'services' ? 'active' : ''}">
             Services
             <svg class="caret" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 4 L5 7 L8 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
         </li>
-        <li><a href="#" class="${active === 'odoo' ? 'active' : ''}">Odoo</a></li>
-        <li><a href="#" class="${active === 'security' ? 'active' : ''}">Security</a></li>
-        <li><a href="#" class="${active === 'training' ? 'active' : ''}">Training</a></li>
-        <li><a href="#" class="${active === 'work' ? 'active' : ''}">Our work</a></li>
-        <li><a href="#" class="${active === 'about' ? 'active' : ''}">About</a></li>
+        <li><a href="#" data-nav-key="odoo" class="${active === 'odoo' ? 'active' : ''}">Odoo</a></li>
+        <li><a href="#" data-nav-key="security" class="${active === 'security' ? 'active' : ''}">Security</a></li>
+        <li><a href="#" data-nav-key="training" class="${active === 'training' ? 'active' : ''}">Training</a></li>
+        <li><a href="#" data-nav-key="work" class="${active === 'work' ? 'active' : ''}">Our work</a></li>
+        <li><a href="#" data-nav-key="about" class="${active === 'about' ? 'active' : ''}">About</a></li>
       </ul>
       <div class="nd-sitenav__right">
         <span class="nd-sitenav__lang"><b>EN</b> &middot; FR</span>
@@ -156,7 +156,25 @@
   `;
 
   // ---- Mount -------------------------------------------------------------
+  // If the markup is already rendered in the page (e.g. an Elementor Theme
+  // Builder header contains the static nav HTML), we just wire the
+  // interactions on the existing DOM. Otherwise we inject the markup before
+  // wiring — preserves the standalone-prototype behavior.
   function mount() {
+    var existing = document.querySelector('.nd-sitenav');
+    if (existing) {
+      // Make sure a scrim exists for the mega panel.
+      if (!document.querySelector('[data-scrim]')) {
+        var s = document.createElement('div');
+        s.className = 'nd-scrim';
+        s.setAttribute('data-scrim', '');
+        document.body.appendChild(s);
+      }
+      applyActive();
+      wire();
+      return;
+    }
+
     var legacy = document.querySelector('nav.site-nav');
     var frag = document.createRange().createContextualFragment(navHTML);
     if (legacy) {
@@ -176,6 +194,17 @@
       }
     }
     wire();
+  }
+
+  // When the nav is pre-rendered, apply the .active class based on the
+  // data-active config so the underline lands on the right link.
+  function applyActive() {
+    if (!active) return;
+    var nav = document.querySelector('.nd-sitenav');
+    if (!nav) return;
+    nav.querySelectorAll('[data-nav-key]').forEach(function (el) {
+      el.classList.toggle('active', el.getAttribute('data-nav-key') === active);
+    });
   }
 
   function wire() {

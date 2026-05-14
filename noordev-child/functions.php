@@ -185,6 +185,20 @@ function noordev_child_inner_page_template() {
 }
 
 /**
+ * Register Elementor Pro Theme Builder locations.
+ *
+ * Lets the user build the site Header and Footer (and add new pages of each
+ * to specific URLs) inside Elementor instead of editing PHP. The child's
+ * header.php / footer.php call `elementor_theme_do_location()` and fall back
+ * to the bundled markup when no Elementor template targets the location.
+ */
+function noordev_child_register_elementor_locations( $manager ) {
+	$manager->register_location( 'header' );
+	$manager->register_location( 'footer' );
+}
+add_action( 'elementor/theme/register_locations', 'noordev_child_register_elementor_locations' );
+
+/**
  * Allow the announcement bar copy to be filtered without editing templates.
  */
 function noordev_child_announcement() {
