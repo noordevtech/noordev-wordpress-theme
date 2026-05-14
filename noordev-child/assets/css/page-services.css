@@ -1,0 +1,127 @@
+/* ============================================================================
+   NOORDEV · Services index page
+   Hero (page-hero), capabilities grid grouped by discipline, deliverables
+   rail, engagement-models row, process band reused from home.
+   ============================================================================ */
+
+/* ---------- Capability groups ---------- */
+.svc-groups {
+  max-width: var(--container-wide); margin: 0 auto;
+  padding: 0 var(--gutter) 40px;
+}
+.svc-group {
+  border-top: 1px solid var(--color-border);
+  padding: 64px 0;
+  display: grid; grid-template-columns: 5fr 7fr; gap: 64px;
+}
+.svc-group__head {
+  position: sticky; top: 80px; align-self: start;
+}
+.svc-group__num {
+  font-family: var(--font-mono); font-size: 11px; text-transform: uppercase;
+  letter-spacing: var(--tracking-label); color: var(--color-ink-muted);
+}
+.svc-group__title {
+  font-size: clamp(28px, 3vw, 40px); font-weight: 400; letter-spacing: -0.02em;
+  line-height: 1.1; margin: 16px 0 12px;
+}
+.svc-group__title .italic { font-family: var(--font-display); font-style: italic; color: var(--navy-700); }
+.svc-group__body { color: var(--color-ink-muted); font-size: var(--text-md); line-height: 1.65; margin: 0; max-width: 360px; }
+
+.svc-group__cards {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+}
+.svc-card {
+  background: var(--color-bg); padding: 32px 28px;
+  display: flex; flex-direction: column;
+  text-decoration: none; color: inherit;
+  transition: background 200ms var(--ease-out);
+  min-height: 220px;
+}
+.svc-card:hover { background: var(--color-bg-subtle); }
+.svc-card:hover .svc-card__arrow { color: var(--crimson-600); transform: translateX(4px); }
+.svc-card__icon {
+  width: 36px; height: 36px; border-radius: var(--radius-sm);
+  background: var(--color-bg-subtle); border: 1px solid var(--color-border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--navy-700);
+  transition: all 200ms var(--ease-out);
+}
+.svc-card:hover .svc-card__icon { background: var(--navy-900); border-color: var(--navy-900); color: white; }
+.svc-card__icon svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.5; }
+.svc-card__title {
+  font-size: var(--text-lg); font-weight: 500; letter-spacing: -0.015em;
+  margin: 20px 0 8px; color: var(--color-ink);
+}
+.svc-card__body {
+  color: var(--color-ink-muted); font-size: var(--text-sm);
+  line-height: 1.6; margin: 0 0 16px;
+}
+.svc-card__foot {
+  margin-top: auto; display: flex; justify-content: space-between; align-items: center;
+  font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.06em; color: var(--color-ink-muted);
+}
+.svc-card__arrow { color: var(--color-ink); transition: all 200ms var(--ease-out); }
+
+@media (max-width: 1024px) {
+  .svc-group { grid-template-columns: 1fr; gap: 32px; padding: 48px 0; }
+  .svc-group__head { position: static; }
+}
+@media (max-width: 640px) {
+  .svc-group__cards { grid-template-columns: 1fr; }
+}
+
+/* ---------- Engagement models ---------- */
+.engage {
+  background: var(--color-bg-subtle);
+  padding: 96px var(--gutter);
+}
+.engage__inner { max-width: var(--container-wide); margin: 0 auto; }
+.engage__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.engage__card {
+  background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius-md);
+  padding: 32px; display: flex; flex-direction: column;
+}
+.engage__card--feat { border-color: var(--navy-700); position: relative; }
+.engage__card--feat::before {
+  content: 'Most chosen'; position: absolute; top: -10px; left: 24px;
+  font-family: var(--font-mono); font-size: 9px; text-transform: uppercase; letter-spacing: 0.1em;
+  background: var(--navy-900); color: white; padding: 4px 10px; border-radius: 999px;
+}
+.engage__label {
+  font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;
+  letter-spacing: var(--tracking-label); color: var(--color-ink-muted);
+}
+.engage__name {
+  font-size: var(--text-xl); font-weight: 500; letter-spacing: -0.015em;
+  margin: 12px 0 8px;
+}
+.engage__price {
+  font-family: var(--font-display); font-style: italic; font-size: var(--text-2xl);
+  color: var(--navy-700); margin: 0 0 16px;
+}
+.engage__body {
+  color: var(--color-ink-muted); font-size: var(--text-sm); line-height: 1.6; margin: 0 0 20px;
+}
+.engage__list { list-style: none; padding: 0; margin: 0 0 24px; display: flex; flex-direction: column; gap: 10px; }
+.engage__list li {
+  font-size: var(--text-sm); color: var(--color-ink);
+  padding-left: 22px; position: relative; line-height: 1.5;
+}
+.engage__list li::before {
+  content:''; position: absolute; left: 0; top: 8px;
+  width: 12px; height: 1px; background: var(--crimson-600);
+}
+.engage__cta {
+  margin-top: auto; display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 500;
+  color: var(--navy-700); text-decoration: none;
+}
+.engage__cta:hover { color: var(--crimson-600); }
+
+@media (max-width: 1024px) {
+  .engage__grid { grid-template-columns: 1fr; }
+}
