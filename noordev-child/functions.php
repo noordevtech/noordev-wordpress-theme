@@ -180,6 +180,7 @@ function noordev_child_inner_page_template() {
 		'about'        => 'about',
 		'contact'      => 'contact',
 		'security'     => 'security',
+		'training'     => 'training',
 	);
 	return isset( $slug_map[ $post->post_name ] ) ? $slug_map[ $post->post_name ] : '';
 }

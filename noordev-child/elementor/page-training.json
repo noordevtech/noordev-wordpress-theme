@@ -1,0 +1,351 @@
+{
+  "version": "0.4",
+  "title": "Noordev — Training",
+  "type": "page",
+  "content": [
+    {
+      "id": "nd000001",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000002",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000003",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"hero\" data-screen-label=\"Training hero\">\n  <div class=\"hero__eyebrow\"><b>&bull;</b> Corporate training &middot; Odoo &middot; Security &middot; Digital</div>\n  <div class=\"hero__layout\">\n    <div>\n      <h1>Training your team will <span class=\"italic\">actually finish</span><span class=\"dot\"></span></h1>\n      <p class=\"hero__lede\">\n        Scenario-driven programs for Odoo, cybersecurity awareness, and digital marketing. Delivered by the same senior practitioners who run our client engagements &mdash; in English, French, or Arabic.\n      </p>\n      <div class=\"hero__cta\">\n        <a class=\"nd-btn nd-btn--accent nd-btn--lg\" href=\"#catalog\">Browse the catalog <span class=\"arrow\">&rarr;</span></a>\n        <a class=\"nd-btn nd-btn--secondary nd-btn--lg\" href=\"#cta\">Request a private cohort</a>\n        <small>Typically 10&ndash;30 learners per cohort</small>\n      </div>\n    </div>\n\n    <aside class=\"cohort\">\n      <div class=\"cohort__head\">\n        <span class=\"cohort__title\">Next open cohort</span>\n        <span class=\"cohort__live\">Enrolling</span>\n      </div>\n      <h3>Odoo 19 for Finance Teams</h3>\n      <div class=\"cohort__meta\">\n        <div class=\"cohort__row\"><span>Starts</span><b>15 September 2026</b></div>\n        <div class=\"cohort__row\"><span>Format</span><b>Hybrid &middot; 6 weeks &middot; 2&times;/wk</b></div>\n        <div class=\"cohort__row\"><span>Language</span><b>EN + FR</b></div>\n        <div class=\"cohort__row\"><span>Location</span><b>Montr&eacute;al + remote</b></div>\n        <div class=\"cohort__row\"><span>Price</span><b>$1,850 CAD / seat</b></div>\n      </div>\n      <div class=\"cohort__seats\" style=\"display:flex; align-items:baseline; gap:10px;\">\n        <span class=\"k\">7</span><span class=\"l\">of 18 seats remaining</span>\n      </div>\n      <a class=\"nd-btn nd-btn--primary\" style=\"width: 100%; justify-content: center; margin-top: 20px;\" href=\"#cta\">Reserve a seat <span class=\"arrow\">&rarr;</span></a>\n    </aside>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "nd000004",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000005",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000006",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"section\" data-screen-label=\"Training tracks\">\n  <div class=\"section__head\">\n    <div>\n      <div class=\"section__eyebrow\">Training tracks</div>\n      <h2 class=\"section__title\">Three tracks, <span class=\"italic\">one outcome</span> &mdash; people who use the systems you&rsquo;ve paid for.</h2>\n    </div>\n    <p class=\"section__body\">\n      We build curricula around the software your team actually touches. No generic &ldquo;digital literacy.&rdquo; Real workflows, real screens, real consequences.\n    </p>\n  </div>\n\n  <div class=\"tracks\">\n    <div class=\"track\">\n      <div class=\"track__num\">Track 01 &middot; Odoo</div>\n      <h3 class=\"track__title\">Odoo end-user &amp; admin training</h3>\n      <p class=\"track__body\">Role-based programs across Sales, Finance, HR, Inventory, and Manufacturing. End-user paths and admin certifications.</p>\n      <ul class=\"track__list\">\n        <li>14 role-based modules</li>\n        <li>Version-current (17 &amp; 18)</li>\n        <li>Hands-on sandbox tenants</li>\n      </ul>\n      <div class=\"track__foot\"><span>6 weeks &middot; <b>EN / FR</b></span><span>From <b>$1,850</b></span></div>\n    </div>\n\n    <div class=\"track\">\n      <div class=\"track__num\">Track 02 &middot; Security</div>\n      <h3 class=\"track__title\">Cybersecurity awareness</h3>\n      <p class=\"track__body\">Scenario-driven training for all-staff, developers, and finance. Paired with phishing exercises matched to your threat model.</p>\n      <ul class=\"track__list\">\n        <li>All-staff baseline &middot; 45 min</li>\n        <li>Dev &amp; finance deep-dives</li>\n        <li>Phishing + reporting cadence</li>\n      </ul>\n      <div class=\"track__foot\"><span>Ongoing &middot; <b>EN / FR / AR</b></span><span>From <b>$48 / learner</b></span></div>\n    </div>\n\n    <div class=\"track\">\n      <div class=\"track__num\">Track 03 &middot; Digital</div>\n      <h3 class=\"track__title\">Digital marketing fundamentals</h3>\n      <p class=\"track__body\">SEO, SEM, analytics, and content strategy &mdash; taught by the team running campaigns, not by a certification slide deck.</p>\n      <ul class=\"track__list\">\n        <li>SEO &amp; content programs</li>\n        <li>Paid media &middot; Google + Meta</li>\n        <li>GA4 + Looker Studio</li>\n      </ul>\n      <div class=\"track__foot\"><span>4 weeks &middot; <b>EN / FR</b></span><span>From <b>$1,450</b></span></div>\n    </div>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "nd000007",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000008",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000009",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"catalog\" id=\"catalog\" data-screen-label=\"Course catalog\">\n  <div class=\"catalog__inner\">\n    <div class=\"section__head\" style=\"margin-bottom: 0;\">\n      <div>\n        <div class=\"section__eyebrow\">Course catalog &middot; Fall 2026</div>\n        <h2 class=\"section__title\">Twelve courses. <span class=\"italic\">Every one</span> taught by a practitioner.</h2>\n      </div>\n      <p class=\"section__body\">\n        Most are offered as open cohorts and private client programs. Private cohorts are customized to your instance, data, and policies.\n      </p>\n    </div>\n\n    <table class=\"cat-table\">\n      <thead>\n        <tr>\n          <th>Course</th>\n          <th>Track</th>\n          <th>Duration</th>\n          <th>Language</th>\n          <th>Next cohort</th>\n          <th style=\"text-align:right;\">Price / seat</th>\n        </tr>\n      </thead>\n      <tbody>\n<tr><td class=\"cat-course\">Odoo 19 for Finance Teams<small>AR / AP &middot; multi-currency &middot; analytic accounting</small></td><td><span class=\"cat-tag odoo\">Odoo</span></td><td class=\"cat-mono\">6 wk &middot; 24 h</td><td class=\"cat-mono\">EN / FR</td><td class=\"cat-mono\">15 Sep &middot; 7 seats</td><td class=\"cat-price\">$1,850</td></tr>\n<tr><td class=\"cat-course\">Odoo 19 for Sales &amp; CRM<small>Pipelines &middot; quotes &middot; sales analytics</small></td><td><span class=\"cat-tag odoo\">Odoo</span></td><td class=\"cat-mono\">4 wk &middot; 16 h</td><td class=\"cat-mono\">EN / FR</td><td class=\"cat-mono\">22 Sep &middot; 12 seats</td><td class=\"cat-price\">$1,450</td></tr>\n<tr><td class=\"cat-course\">Odoo Inventory &amp; Manufacturing<small>Warehousing &middot; MRP &middot; BOMs &middot; routings</small></td><td><span class=\"cat-tag odoo\">Odoo</span></td><td class=\"cat-mono\">5 wk &middot; 20 h</td><td class=\"cat-mono\">EN / FR</td><td class=\"cat-mono\">06 Oct &middot; 9 seats</td><td class=\"cat-price\">$1,650</td></tr>\n<tr><td class=\"cat-course\">Odoo Admin Certification Prep<small>Configuration &middot; security &middot; technical</small></td><td><span class=\"cat-tag odoo\">Odoo</span></td><td class=\"cat-mono\">8 wk &middot; 32 h</td><td class=\"cat-mono\">EN</td><td class=\"cat-mono\">13 Oct &middot; 5 seats</td><td class=\"cat-price\">$2,850</td></tr>\n<tr><td class=\"cat-course\">Security Awareness &middot; All-Staff<small>Phishing &middot; passwords &middot; social engineering &middot; BYOD</small></td><td><span class=\"cat-tag sec\">Security</span></td><td class=\"cat-mono\">45 min + ongoing</td><td class=\"cat-mono\">EN / FR / AR</td><td class=\"cat-mono\">Rolling &middot; on-demand</td><td class=\"cat-price\">$48 / learner</td></tr>\n<tr><td class=\"cat-course\">Secure Coding for Developers<small>OWASP Top 10 &middot; SSDLC &middot; threat modeling</small></td><td><span class=\"cat-tag sec\">Security</span></td><td class=\"cat-mono\">3 wk &middot; 12 h</td><td class=\"cat-mono\">EN</td><td class=\"cat-mono\">29 Sep &middot; 14 seats</td><td class=\"cat-price\">$1,250</td></tr>\n<tr><td class=\"cat-course\">ISO 27001 Internal Auditor<small>Clauses &middot; Annex A &middot; audit planning &middot; reporting</small></td><td><span class=\"cat-tag sec\">Security</span></td><td class=\"cat-mono\">2 wk &middot; 16 h</td><td class=\"cat-mono\">EN / FR</td><td class=\"cat-mono\">20 Oct &middot; 8 seats</td><td class=\"cat-price\">$1,950</td></tr>\n<tr><td class=\"cat-course\">Finance Team Phishing &amp; Wire Fraud<small>BEC &middot; invoice fraud &middot; payment verification</small></td><td><span class=\"cat-tag sec\">Security</span></td><td class=\"cat-mono\">90 min</td><td class=\"cat-mono\">EN / FR</td><td class=\"cat-mono\">Rolling &middot; on-demand</td><td class=\"cat-price\">$240 / learner</td></tr>\n<tr><td class=\"cat-course\">SEO &amp; Content Fundamentals<small>Technical SEO &middot; keyword research &middot; editorial</small></td><td><span class=\"cat-tag growth\">Growth</span></td><td class=\"cat-mono\">4 wk &middot; 16 h</td><td class=\"cat-mono\">EN / FR</td><td class=\"cat-mono\">29 Sep &middot; 10 seats</td><td class=\"cat-price\">$1,450</td></tr>\n<tr><td class=\"cat-course\">Google Ads &amp; Meta Performance<small>Campaign structure &middot; creative &middot; measurement</small></td><td><span class=\"cat-tag growth\">Growth</span></td><td class=\"cat-mono\">3 wk &middot; 12 h</td><td class=\"cat-mono\">EN / FR</td><td class=\"cat-mono\">06 Oct &middot; 12 seats</td><td class=\"cat-price\">$1,250</td></tr>\n<tr><td class=\"cat-course\">GA4 &amp; Looker Studio<small>Event model &middot; reports &middot; attribution basics</small></td><td><span class=\"cat-tag growth\">Growth</span></td><td class=\"cat-mono\">2 wk &middot; 8 h</td><td class=\"cat-mono\">EN</td><td class=\"cat-mono\">03 Nov &middot; 15 seats</td><td class=\"cat-price\">$850</td></tr>\n<tr><td class=\"cat-course\">Digital Leadership for Execs<small>Roadmaps &middot; vendor reviews &middot; budgeting</small></td><td><span class=\"cat-tag growth\">Growth</span></td><td class=\"cat-mono\">1 day &middot; invite</td><td class=\"cat-mono\">EN / FR</td><td class=\"cat-mono\">Private only</td><td class=\"cat-price\">On request</td></tr>\n      </tbody>\n    </table>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "nd00000a",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd00000b",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd00000c",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"formats\" data-screen-label=\"Training formats\">\n  <div class=\"section__head\">\n    <div>\n      <div class=\"section__eyebrow\">How we deliver</div>\n      <h2 class=\"section__title\">Four formats. <span class=\"italic\">Pick</span> the one that fits your team.</h2>\n    </div>\n    <p class=\"section__body\">\n      Most clients start with one open cohort to evaluate fit, then move to private cohorts built around their instance, data, and policies.\n    </p>\n  </div>\n\n  <div class=\"formats__grid\">\n    <div class=\"format\">\n      <div class=\"format__icon\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><circle cx=\"7\" cy=\"6\" r=\"2.5\"/><path d=\"M3 17c0-3 2-5 4-5s4 2 4 5M13 11l2 2 4-4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></div>\n      <h4>Open cohorts</h4>\n      <p>Join a mixed-company cohort. 10&ndash;18 learners, bi-weekly sessions, hands-on labs between.</p>\n      <div class=\"format__meta\"><b>Per-seat</b> &middot; Published calendar</div>\n    </div>\n    <div class=\"format\">\n      <div class=\"format__icon\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><rect x=\"3\" y=\"4\" width=\"14\" height=\"12\" rx=\"1.5\"/><path d=\"M3 8h14\"/></svg></div>\n      <h4>Private cohorts</h4>\n      <p>We train your team on your instance, your data, your policies. Scheduled around your quarter.</p>\n      <div class=\"format__meta\"><b>Flat fee</b> &middot; Up to 20 seats</div>\n    </div>\n    <div class=\"format\">\n      <div class=\"format__icon\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M4 3h12v10l-3-2H4z\" stroke-linejoin=\"round\"/></svg></div>\n      <h4>Workshops</h4>\n      <p>One- or two-day intensives for exec teams, boards, or a single department. Outcome-oriented.</p>\n      <div class=\"format__meta\"><b>Day rate</b> &middot; On-site or remote</div>\n    </div>\n    <div class=\"format\">\n      <div class=\"format__icon\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 20 20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"><path d=\"M3 10c0-4 3-6 7-6s7 2 7 6-3 6-7 6c-1 0-2 0-3-.5L3 17l1.5-4C3 12 3 11 3 10z\" stroke-linejoin=\"round\"/></svg></div>\n      <h4>On-demand &middot; LMS</h4>\n      <p>Self-paced modules hosted in your LMS or ours. Ideal for security awareness at scale.</p>\n      <div class=\"format__meta\"><b>Per-learner</b> &middot; Annual subscription</div>\n    </div>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "nd00000d",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd00000e",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd00000f",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"outcomes\" data-screen-label=\"Training outcomes\">\n  <div class=\"outcomes__inner\">\n    <div class=\"outcomes__head\">\n      <div class=\"section__eyebrow\">What clients see</div>\n      <h2 class=\"section__title\">Training measured in <span class=\"italic\">completion</span>, not attendance.</h2>\n    </div>\n    <div class=\"outcomes__grid\">\n      <div class=\"outcome\">\n        <div class=\"k\">94<span class=\"unit\">%</span><span class=\"dot\"></span></div>\n        <div class=\"l\">Completion rate &middot; private cohorts</div>\n      </div>\n      <div class=\"outcome\">\n        <div class=\"k\">4.8<span class=\"unit\">/5</span></div>\n        <div class=\"l\">Average learner rating</div>\n      </div>\n      <div class=\"outcome\">\n        <div class=\"k\">2,400+</div>\n        <div class=\"l\">Learners trained since 2012</div>\n      </div>\n      <div class=\"outcome\">\n        <div class=\"k\">68<span class=\"unit\">%</span></div>\n        <div class=\"l\">Reduction in phishing click-through &middot; Y1</div>\n      </div>\n    </div>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "nd000010",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000011",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000012",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"proof\" data-screen-label=\"Training proof\">\n  <blockquote class=\"proof__quote\">\n    The team finally stopped fighting Odoo. Four weeks of focused training did what eighteen months of internal docs couldn&rsquo;t &mdash; our close time dropped from ten days to three.\n  </blockquote>\n  <div class=\"proof__by\">\n    <div class=\"proof__avatar\">MD</div>\n    <div class=\"proof__by-who\"><b>Marc Desjardins</b><span>CFO, Atlas Logistics &middot; Montr&eacute;al</span></div>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    },
+    {
+      "id": "nd000013",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000014",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000015",
+              "elType": "widget",
+              "settings": {
+                "html": "<section class=\"cta\" id=\"cta\" data-screen-label=\"Training CTA\">\n  <div class=\"cta__inner\">\n    <div>\n      <div class=\"section__eyebrow\">Let&rsquo;s talk</div>\n      <h2 class=\"cta__title\">Build a program <span class=\"italic\">for your team</span>.</h2>\n      <p class=\"cta__body\">\n        Tell us what your team needs to do next quarter &mdash; a new Odoo module, an ISO 27001 audit, a marketing capability &mdash; and we&rsquo;ll propose a cohort, a workshop, or an LMS rollout that gets them there.\n      </p>\n      <div style=\"display: flex; gap: 24px; align-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--color-ink-muted); text-transform: uppercase; letter-spacing: 0.06em;\">\n        <span>&#x2713; On-site or remote</span>\n        <span>&middot; Bilingual EN / FR</span>\n        <span>&middot; Arabic on request</span>\n      </div>\n    </div>\n\n    <form class=\"cta__form\" onsubmit=\"event.preventDefault()\">\n      <div>\n        <label>Work email</label>\n        <input type=\"email\" placeholder=\"marc@atlas.com\">\n      </div>\n      <div class=\"cta__form-row\">\n        <div>\n          <label>Company</label>\n          <input placeholder=\"Atlas Logistics\">\n        </div>\n        <div>\n          <label>Team size</label>\n          <select>\n            <option>5&ndash;15 learners</option>\n            <option>16&ndash;40 learners</option>\n            <option>40&ndash;100 learners</option>\n            <option>100+ &middot; enterprise</option>\n          </select>\n        </div>\n      </div>\n      <div>\n        <label>Track of interest</label>\n        <select>\n          <option>Odoo end-user &amp; admin</option>\n          <option>Cybersecurity awareness</option>\n          <option>ISO 27001 internal auditor</option>\n          <option>Digital marketing fundamentals</option>\n          <option>Custom / workshop</option>\n        </select>\n      </div>\n      <div class=\"submit-row\">\n        <small>&#x2713; Law 25 compliant &middot; Data stays in Canada</small>\n        <button class=\"nd-btn nd-btn--accent\">Request a cohort <span class=\"arrow\">&rarr;</span></button>\n      </div>\n    </form>\n  </div>\n</section>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": []
+}
