@@ -1,0 +1,57 @@
+{
+  "version": "0.4",
+  "title": "Noordev — Footer",
+  "type": "footer",
+  "content": [
+    {
+      "id": "nd000001",
+      "elType": "section",
+      "settings": {
+        "gap": "no",
+        "structure": "10",
+        "layout": "full_width",
+        "stretch_section": "section-stretched",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "margin": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "nd000002",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "_inline_size": null
+          },
+          "elements": [
+            {
+              "id": "nd000003",
+              "elType": "widget",
+              "settings": {
+                "html": "<footer class=\"footer\" role=\"contentinfo\">\n  <div class=\"footer__inner\">\n    <div class=\"footer__top\">\n      <div class=\"footer__brand\">\n        <img src=\"/wp-content/themes/noordev-child/assets/img/logo-noordev.png\" alt=\"Noordev\">\n        <p class=\"footer__tag\">Digital agency &amp; strategy consulting. Websites, growth, and Odoo &mdash; delivered by a senior team across four cities.</p>\n      </div>\n\n      <div class=\"footer__col\">\n        <h5>Services</h5>\n        <ul>\n          <li><a href=\"/services/\">Web design</a></li>\n          <li><a href=\"/services/\">SEO &amp; paid media</a></li>\n          <li><a href=\"/services/\">Social media</a></li>\n          <li><a href=\"/services/\">Corporate training</a></li>\n          <li><a href=\"/services/\">WordPress</a></li>\n        </ul>\n      </div>\n\n      <div class=\"footer__col\">\n        <h5>Odoo</h5>\n        <ul>\n          <li><a href=\"/services/\">Implementation</a></li>\n          <li><a href=\"/services/\">Customization</a></li>\n          <li><a href=\"/services/\">Migration</a></li>\n          <li><a href=\"/services/\">Hosting</a></li>\n          <li><a href=\"/services/\">Support</a></li>\n        </ul>\n      </div>\n\n      <div class=\"footer__col\">\n        <h5>Security</h5>\n        <ul>\n          <li><a href=\"/security/\">ISO 27001</a></li>\n          <li><a href=\"/security/\">GRC &amp; risk</a></li>\n          <li><a href=\"/security/\">Policy &amp; controls</a></li>\n          <li><a href=\"/security/\">Audit prep</a></li>\n          <li><a href=\"/security/\">Security awareness</a></li>\n        </ul>\n      </div>\n\n      <div class=\"footer__col\">\n        <h5>Legal</h5>\n        <ul>\n          <li><a href=\"#\">Privacy policy</a></li>\n          <li><a href=\"#\">Law 25</a></li>\n          <li><a href=\"#\">Terms of service</a></li>\n          <li><a href=\"#\">Cookie policy</a></li>\n        </ul>\n      </div>\n    </div>\n\n    <div class=\"footer__bottom\">\n      <div>&copy; Noordev &middot; 2012&ndash;2026</div>\n      <div class=\"locs\">\n        <span><b>Montr&eacute;al-Toronto</b>(450) 990-0134</span>\n        <span><b>Miami</b>(877) 477-4146</span>\n        <span><b>Rabat</b>0661 86 39 92</span>\n      </div>\n      <div class=\"lang\"><b>EN</b> &middot; FR</div>\n    </div>\n  </div>\n</footer>"
+              },
+              "elements": [],
+              "widgetType": "html"
+            }
+          ],
+          "isInner": false
+        }
+      ],
+      "isInner": false
+    }
+  ],
+  "page_settings": []
+}

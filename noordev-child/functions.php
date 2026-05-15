@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'NOORDEV_CHILD_VERSION', '0.1.0' );
+define( 'NOORDEV_CHILD_VERSION', '0.2.0' );
 
 /**
  * Theme setup — runs once on after_setup_theme.
@@ -101,6 +101,25 @@ function noordev_child_assets() {
 		);
 	}
 
+	// 5) Inner pages (Services / Case studies / About / Contact).
+	//    `inner-pages.css` is shared scaffolding (page hero, rail, deflist, chips).
+	//    Each page template adds its own stylesheet on top.
+	$inner_template = noordev_child_inner_page_template();
+	if ( $inner_template ) {
+		wp_enqueue_style(
+			'noordev-inner-pages',
+			$child_uri . '/assets/css/inner-pages.css',
+			array( 'noordev-global' ),
+			NOORDEV_CHILD_VERSION
+		);
+		wp_enqueue_style(
+			'noordev-' . $inner_template,
+			$child_uri . '/assets/css/page-' . $inner_template . '.css',
+			array( 'noordev-inner-pages' ),
+			NOORDEV_CHILD_VERSION
+		);
+	}
+
 	// Mega-menu nav script (mounts after .announce on every page).
 	wp_enqueue_script(
 		'noordev-nav',
@@ -133,6 +152,76 @@ function noordev_child_is_home_page() {
 		$post = get_queried_object();
 		if ( $post && in_array( $post->post_name, array( 'home', 'noordev-home', 'home-design-v0-1' ), true ) ) {
 			return true;
+		}
+	}
+	return false;
+}
+
+/**
+ * Map the current page to its inner-page CSS slug by post slug.
+ *
+ * Returns one of 'services' | 'case-studies' | 'about' | 'contact', or '' if
+ * the current page does not match. Detection is by post slug — the inner
+ * pages are imported as Elementor templates, so there is no PHP template to
+ * key off of.
+ */
+function noordev_child_inner_page_template() {
+	if ( ! is_page() ) {
+		return '';
+	}
+	$post = get_queried_object();
+	if ( ! $post || empty( $post->post_name ) ) {
+		return '';
+	}
+	$slug_map = array(
+		'services'     => 'services',
+		'case-studies' => 'case-studies',
+		'work'         => 'case-studies',
+		'about'        => 'about',
+		'contact'      => 'contact',
+		'security'     => 'security',
+		'training'     => 'training',
+	);
+	return isset( $slug_map[ $post->post_name ] ) ? $slug_map[ $post->post_name ] : '';
+}
+
+/**
+ * Register Elementor Pro Theme Builder locations.
+ *
+ * Lets the user build the site Header and Footer (and add new pages of each
+ * to specific URLs) inside Elementor instead of editing PHP. The child's
+ * header.php / footer.php call `noordev_child_do_elementor_location()` and
+ * fall back to the bundled markup when no Elementor template targets the
+ * location.
+ */
+function noordev_child_register_elementor_locations( $manager ) {
+	$manager->register_location( 'header' );
+	$manager->register_location( 'footer' );
+}
+add_action( 'elementor/theme/register_locations', 'noordev_child_register_elementor_locations' );
+
+/**
+ * Render an Elementor Pro Theme Builder location, returning true when a
+ * matching template was found and rendered.
+ *
+ * Wraps the public helper `elementor_theme_do_location()` so we keep working
+ * if the helper is missing or renamed (Elementor Pro 4.x reshuffles a lot of
+ * internals). Falls through the class-based API as a backup.
+ *
+ * @param string $location Registered location slug (e.g. 'header', 'footer').
+ * @return bool True if Elementor rendered a template for this location.
+ */
+function noordev_child_do_elementor_location( $location ) {
+	if ( function_exists( 'elementor_theme_do_location' ) ) {
+		return (bool) elementor_theme_do_location( $location );
+	}
+	if ( class_exists( '\\ElementorPro\\Modules\\ThemeBuilder\\Module' ) ) {
+		$module = \ElementorPro\Modules\ThemeBuilder\Module::instance();
+		if ( $module && method_exists( $module, 'get_locations_manager' ) ) {
+			$manager = $module->get_locations_manager();
+			if ( $manager && method_exists( $manager, 'do_location' ) ) {
+				return (bool) $manager->do_location( $location );
+			}
 		}
 	}
 	return false;

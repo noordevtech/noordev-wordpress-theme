@@ -1,0 +1,139 @@
+/* ============================================================================
+   NOORDEV · Inner-page primitives
+   Shared across Services / Case Studies / About / Contact: page hero,
+   content rails, list patterns, accent rules.
+   ============================================================================ */
+
+/* ---------- Page hero (compact, type-led) ---------- */
+.page-hero {
+  background: var(--navy-900);
+  color: white;
+  padding: 96px var(--gutter) 80px;
+  position: relative; isolation: isolate; overflow: hidden;
+}
+.page-hero::before {
+  content:''; position: absolute; inset: 0; z-index: -1;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: radial-gradient(ellipse at 90% 0%, black 25%, transparent 65%);
+          mask-image: radial-gradient(ellipse at 90% 0%, black 25%, transparent 65%);
+}
+.page-hero::after {
+  content:''; position: absolute; inset: 0; z-index: -1;
+  background: radial-gradient(ellipse at 0% 100%, rgba(207,29,59,0.18), transparent 55%);
+  pointer-events: none;
+}
+.page-hero__inner {
+  max-width: var(--container-wide); margin: 0 auto;
+  display: grid; grid-template-columns: 3fr 2fr; gap: 64px; align-items: end;
+}
+.page-hero__eyebrow {
+  font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase;
+  letter-spacing: var(--tracking-label); color: rgba(255,255,255,0.7);
+  display: inline-flex; align-items: center; gap: 12px; margin-bottom: 32px;
+}
+.page-hero__eyebrow::before { content:''; width: 32px; height: 1px; background: var(--crimson-500); }
+.page-hero__crumbs {
+  font-family: var(--font-mono); font-size: 11px; text-transform: uppercase;
+  letter-spacing: 0.06em; color: rgba(255,255,255,0.45);
+  display: flex; gap: 10px; margin-bottom: 28px;
+}
+.page-hero__crumbs a { color: rgba(255,255,255,0.7); text-decoration: none; }
+.page-hero__crumbs a:hover { color: white; }
+.page-hero__crumbs .sep { color: rgba(255,255,255,0.3); }
+.page-hero h1 {
+  font-size: clamp(40px, 5.5vw, 80px);
+  font-weight: 300; letter-spacing: -0.025em; line-height: 1.02;
+  margin: 0; color: white;
+}
+.page-hero h1 .italic { font-family: var(--font-display); font-style: italic; color: rgba(255,255,255,0.78); font-weight: 400; }
+.page-hero h1 .accent-dot {
+  display: inline-block; width: 0.22em; height: 0.22em;
+  background: var(--crimson-500); border-radius: 50%;
+  transform: translateY(-0.55em); margin-left: 0.05em;
+}
+.page-hero__lede {
+  font-size: var(--text-md); color: rgba(255,255,255,0.78);
+  line-height: 1.6; margin: 0;
+}
+.page-hero__meta {
+  display: flex; gap: 32px; flex-wrap: wrap;
+  margin-top: 56px; padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,0.14);
+}
+.page-hero__meta-item .l {
+  font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.08em; color: rgba(255,255,255,0.5);
+}
+.page-hero__meta-item .v {
+  font-family: var(--font-sans); font-size: var(--text-md); color: white;
+  margin-top: 6px; font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .page-hero { padding: 72px var(--gutter) 56px; }
+  .page-hero__inner { grid-template-columns: 1fr; gap: 32px; }
+  .page-hero__meta { gap: 24px; margin-top: 40px; }
+}
+
+/* ---------- Two-column prose rail ---------- */
+.rail {
+  max-width: var(--container-wide); margin: 0 auto;
+  padding: 96px var(--gutter);
+  display: grid; grid-template-columns: 5fr 7fr; gap: 80px;
+}
+.rail__label {
+  font-family: var(--font-mono); font-size: 11px; text-transform: uppercase;
+  letter-spacing: var(--tracking-label); color: var(--color-ink-muted);
+  display: flex; align-items: center; gap: 10px;
+}
+.rail__label::before { content:''; width: 24px; height: 1px; background: var(--crimson-600); }
+.rail__title {
+  font-size: clamp(28px, 3.4vw, 44px); font-weight: 400; letter-spacing: -0.02em;
+  line-height: 1.1; margin: 16px 0 0; color: var(--color-ink);
+}
+.rail__title .italic { font-family: var(--font-display); font-style: italic; color: var(--navy-700); }
+.rail__body { color: var(--color-ink-muted); font-size: var(--text-md); line-height: 1.7; }
+.rail__body p { margin: 0 0 18px; }
+.rail__body p:last-child { margin-bottom: 0; }
+.rail__body strong { color: var(--color-ink); font-weight: 500; }
+
+@media (max-width: 900px) {
+  .rail { grid-template-columns: 1fr; gap: 28px; padding: 72px var(--gutter); }
+}
+
+/* ---------- Definition list (bordered key/value rows) ---------- */
+.deflist { border-top: 1px solid var(--color-border); }
+.deflist__row {
+  display: grid; grid-template-columns: 200px 1fr;
+  gap: 32px; padding: 24px 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: baseline;
+}
+.deflist__k {
+  font-family: var(--font-mono); font-size: 11px; text-transform: uppercase;
+  letter-spacing: var(--tracking-label); color: var(--color-ink-muted);
+}
+.deflist__v { font-size: var(--text-md); color: var(--color-ink); line-height: 1.55; }
+.deflist__v b { font-weight: 500; }
+
+@media (max-width: 720px) {
+  .deflist__row { grid-template-columns: 1fr; gap: 6px; padding: 18px 0; }
+}
+
+/* ---------- Tag chips ---------- */
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chip {
+  font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.06em; padding: 5px 10px;
+  border: 1px solid var(--color-border); border-radius: 999px;
+  color: var(--color-ink-muted); background: var(--color-bg);
+  text-decoration: none; cursor: pointer;
+  transition: all 180ms var(--ease-out);
+}
+.chip:hover { color: var(--color-ink); border-color: var(--color-border-strong); }
+.chip[aria-pressed="true"], .chip.is-active {
+  background: var(--navy-900); color: white; border-color: var(--navy-900);
+}

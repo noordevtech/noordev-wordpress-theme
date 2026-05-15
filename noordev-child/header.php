@@ -21,6 +21,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 <body <?php body_class( 'nd-page' ); ?>>
 <?php if ( function_exists( 'wp_body_open' ) ) { wp_body_open(); } ?>
 
-<div class="announce" role="status">
-	<?php echo wp_kses_post( noordev_child_announcement() ); ?>
-</div>
+<?php
+/*
+ * If Elementor Pro Theme Builder has a template assigned to the `header`
+ * location, render it here. Otherwise fall back to the bundled
+ * announcement bar (nav.js mounts the sticky mega-menu after it).
+ */
+if ( ! function_exists( 'noordev_child_do_elementor_location' ) || ! noordev_child_do_elementor_location( 'header' ) ) :
+	?>
+	<div class="announce" role="status">
+		<?php echo wp_kses_post( noordev_child_announcement() ); ?>
+	</div>
+	<?php
+endif;
+?>
